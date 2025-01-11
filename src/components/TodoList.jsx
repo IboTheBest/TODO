@@ -46,7 +46,7 @@ function handleEditSubmit(ev){
                 </p>
             </div>
             <button
-                onClick={()=>handleDeleteButton(item.id)}
+                onClick={()=>handleDeleteButton(index)}
                 className="text-slate-500 p-2 rounded-md hover:text-red-400"
             >
                 <Trash2 className="h-4 w-4" />

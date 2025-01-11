@@ -7,8 +7,8 @@ export const TodoContext = ({children}) =>{
    const saveTodo = (data) => setTodos([...todos, data])
 
    const deleteTodos = (id)=>{
-      const daleteItem = todos.filter(item => item.id === id)
-      todos.splice(daleteItem, 1)
+      
+      todos.splice(id, 1)
       setTodos([...todos])
    }
    const editTodos = (id, data)=>{
